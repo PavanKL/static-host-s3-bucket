@@ -18,7 +18,7 @@ resource "aws_s3_bucket_policy" "elsevier-policy" {
 resource "aws_s3_object" "elsevier-index" {
   bucket       = aws_s3_bucket.elsevier.id
   key          = "index1.html"
-  source       = "../new_proj/index1.html"
+  source       = "../latest_proj/static-host-s3-bucket/index1.html"
   content_type = "text/html"
   acl          = "public-read"
 }
