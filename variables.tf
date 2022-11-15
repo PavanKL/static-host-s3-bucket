@@ -1,10 +1,10 @@
 variable "domainName" {
-  default = "www.elsevier-exercise-pavan.com"
+  default = "terraformforexersice.in"
   type    = string
 }
 
 variable "bucketName" {
-  default = "www.elsevier-exercise-pavan.com"
+  default = "terraformforexersice.in"
   type    = string
 }
 

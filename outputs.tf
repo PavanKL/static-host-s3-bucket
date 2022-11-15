@@ -8,10 +8,3 @@ output "bucket_name" {
   value = aws_s3_bucket.elsevier.bucket
 }
 
-output "object_name" {
-  value = aws_s3_object.elsevier-index.key
-}
-
-output "bucket_domain_name" {
-  value = aws_s3_bucket.elsevier.bucket_domain_name
-}
