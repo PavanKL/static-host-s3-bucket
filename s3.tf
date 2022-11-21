@@ -8,12 +8,6 @@ resource "aws_s3_bucket_website_configuration" "elsevier-config" {
   index_document {
     suffix = var.index_document
   }
-  routing_rule {
-
-    redirect {
-      replace_key_prefix_with = var.bucketName
-    }
-  }
 }
 
 resource "aws_s3_bucket_policy" "elsevier-policy" {
