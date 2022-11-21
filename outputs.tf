@@ -8,3 +8,16 @@ output "bucket_name" {
   value = aws_s3_bucket.elsevier.bucket
 }
 
+output "Route53"{
+  value = aws_route53_zone.main.name
+}
+
+output "bucket_domain_name"{
+  value = aws_s3_bucket.elsevier.bucket_domain_name
+}
+
+
+
+
+
+
