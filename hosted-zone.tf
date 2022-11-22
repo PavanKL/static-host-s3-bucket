@@ -9,8 +9,8 @@ resource "aws_route53_record" "exampleDomain-a" {
   name    = var.domainName
   type    = "A"
   alias {
-    name                   = aws_s3_bucket.elsevier.website_endpoint
     zone_id                = aws_s3_bucket.elsevier.hosted_zone_id
+    name                   = aws_s3_bucket.elsevier.website_endpoint
     evaluate_target_health = true
   }
 }
